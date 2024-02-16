@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de descuento</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Calculadora de descuento</h1>
+        <form>
+            <div class="form-group">
+                <label for="producto1">Producto 1</label>
+                <input type="text" class="form-control" id="producto1" placeholder="Ingrese el valor del producto 1">
+            </div>
+            <div class="form-group">
+                <label for="producto2">Producto 2</label>
+                <input type="text" class="form-control" id="producto2" placeholder="Ingrese el valor del producto 2">
+            </div>
+            <div class="form-group">
+                <label for="producto3">Producto 3</label>
+                <input type="text" class="form-control" id="producto3" placeholder="Ingrese el valor del producto 3">
+            </div>
+            <div class="form-group">
+                <label for="producto4">Producto 4</label>
+                <input type="text" class="form-control" id="producto4" placeholder="Ingrese el valor del producto 4">
+            </div>
+            <div class="form-group">
+                <label for="producto5">Producto 5</label>
+                <input type="text" class="form-control" id="producto5" placeholder="Ingrese el valor del producto 5">
+            </div>
+            <div class="form-group">
+                <label for="subtotal">Subtotal</label>
+                <input type="text" class="form-control" id="subtotal" readonly>
+            </div>
+            <div class="form-group">
+                <label for="descuento">Descuento</label>
+                <input type="text" class="form-control" id="descuento" value="Descuento 0%" readonly>
+            </div>
+            <div class="form-group">
+                <label for="total">Total a pagar</label>
+                <input type="text" class="form-control" id="total" readonly>
+            </div>
+            <button type="button" class="btn btn-success" id="calcular">Calcular</button>
+            <button type="button" class="btn btn-danger" id="limpiar">Limpiar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="script.js"></script>
+</body>
+</html>
